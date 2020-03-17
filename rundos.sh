@@ -2,7 +2,7 @@
 
 docker run --name firefox -e DISPLAY=$DISPLAY --device /dev/snd/controlC0 \
 	  --device /dev/snd/pcmC0D0p --device /dev/snd/timer \
-	  -v $HOME/Downloads:/tmp/Downloads \
+	  -v $HOME/Downloads:/home/appuser/Downloads \
 	    -v /tmp/.X11-unix:/tmp/.X11-unix -v $XAUTHORITY:/tmp/.host_Xauthority:ro \
 	      -dti jamesshane/firefox
 
