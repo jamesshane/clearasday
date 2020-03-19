@@ -2,9 +2,10 @@
 
 docker login
 
-docker pull jamesshane/docker-vscode
-docker pull jamesshane/docker-firefox
-docker pull jamesshane/docker-ubuntux
+docker pull jamesshane/vscode
+docker pull jamesshane/firefox
+docker pull jamesshane/ubuntux
+docker pull jamesshane/snapd
 #docker pull jamesshane/docker-ubuntuvnc
 #docker pull jamesshane/docker-discord
 

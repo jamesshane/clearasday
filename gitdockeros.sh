@@ -14,4 +14,5 @@ git clone https://github.com/jamesshane/docker-firefox.git
 git clone https://github.com/jamesshane/docker-ubuntux.git
 git clone https://github.com/jamesshane/docker-ubuntuvnc.git
 git clone https://github.com/jamesshane/docker-discord.git
+git clone https://github.com/jamesshane/docker-snapd.git
 

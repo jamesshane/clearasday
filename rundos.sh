@@ -18,3 +18,5 @@ docker run -dti --privileged \
 				        -e GID=$(id -g) \
 					    -e USERNAME=$(id -un) \
 					        jamesshane/vscode
+
+docker run -dti jamesshane/snapd snap
