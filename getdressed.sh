@@ -6,7 +6,7 @@ sed -i 's/font/powerline/g' ~/.bashrc
 
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim && \
-echo -e "\nsyntax off\nexecute pathogen#infect()\n" >> ~/.vimrc
+echo -e "\nsyntax on\nexecute pathogen#infect()\n" >> ~/.vimrc
 
 git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
 git clone https://github.com/vim-airline/vim-airline-themes ~/.vim/bundle/vim-airline-themes

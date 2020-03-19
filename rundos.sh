@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo -e "\nxhost +si:localuser:j\n" >> ~/.bashrc
+
+xhost +si:localuser:j
+
 docker run --name firefox -e DISPLAY=$DISPLAY --device /dev/snd/controlC0 \
 	  --device /dev/snd/pcmC0D0p --device /dev/snd/timer \
 	  -v $HOME/Downloads:/home/appuser/Downloads \
