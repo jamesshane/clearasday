@@ -15,6 +15,12 @@ cd ~/.vim/bundle && \
 git clone https://github.com/scrooloose/nerdtree
 
 cd ~/.vim/bundle && \
+git clone https://github.com/evandotpro/nerdtree-chmod
+
+cd ~/.vim/bundle && \
+git clone https://github.com/low-ghost/nerdtree-fugitive
+
+cd ~/.vim/bundle && \
 git clone https://github.com/tpope/vim-fugitive
 
 cd ~/.vim/bundle && \

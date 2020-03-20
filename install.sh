@@ -13,3 +13,7 @@ sudo swupd bundle-add containers-basic && \
 sudo usermod -aG docker j && \
 sudo timedatectl set-timezone America/Denver && \
 sudo swupd bundle-add lightdm 
+cp -r /usr/share/xdg/awesome/ ~/.config/
+sed -i 's/Mod4/Mod1/g' ~/.config/awesome/rc.lua
+sed -i 's/xterm/xfce4-terminal/g' ~/.config/awesome/rc.lua
+
