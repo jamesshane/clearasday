@@ -23,4 +23,19 @@ docker run -dti --privileged \
 					    -e USERNAME=$(id -un) \
 					        jamesshane/vscode
 
-docker run -dti jamesshane/snapd snap
+docker run \
+    --name=snap \
+    -ti \
+    --tmpfs /run \
+    --tmpfs /run/lock \
+    --tmpfs /tmp \
+    --cap-add SYS_ADMIN \
+    --device=/dev/fuse \
+    --security-opt apparmor:unconfined \
+    --security-opt seccomp:unconfined \
+    -v /sys/fs/cgroup:/sys/fs/cgroup:ro \
+    -v /lib/modules:/lib/modules:ro \
+    -d jamesshane/snapd
+
+echo -e "\nalias dff='docker start firefox'\nalias dvs='docker start vscode'\nalias dsnap='docker start snap && docker exec -ti snap bash'" >> ~/.bashrc
+

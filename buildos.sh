@@ -9,6 +9,5 @@ docker build -t jamesshane/firefox .
 cd ../docker-vscode/vscode
 docker build -t jamesshane/vscode .
 cd ../docker-snapd/
-docker build -t jamesshane/snapd .
-
+./build.sh
 
