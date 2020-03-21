@@ -35,6 +35,11 @@ docker run \
     --security-opt seccomp:unconfined \
     -v /sys/fs/cgroup:/sys/fs/cgroup:ro \
     -v /lib/modules:/lib/modules:ro \
+    -v /tmp/.X11-unix:/tmp/.X11-unix \
+    -e DISPLAY=unix$DISPLAY \
+    -v $XAUTHORITY:/tmp/.host_Xauthority:ro \
+    --privileged \
+    --device /dev/dri \
     -d jamesshane/snapd
 
 echo -e "\nalias dff='docker start firefox'\nalias dvs='docker start vscode'\nalias dsnap='docker start snap && docker exec -ti snap bash'" >> ~/.bashrc
